@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-left: 50px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: 10px;
+        }
+        h2{
+            text-transform: capitalize;
+            color: black;
+          transition: color 0.5s , letters-spacing 0.5s;
+        }
+        h2:hover{
+            color: red;
+           letter-spacing: 5px;
+        }
+        button{
+            height: 50px;
+            width: 150px;
+            background-color: royalblue;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.6s ,transform 0.3s ease  , box-shadow .3s;
+           
+        }
+        button:hover{
+          background-color: palevioletred;
+          transform: scale(1.1);
+          box-shadow: 0 0 15px #ff4081;
+        }
+         
+        .square{
+            height: 150px;
+            width: 150px;
+            background-color: teal;
+            margin: 60px auto;
+            transition: background-color 1s , transform 1s , border-radius 1s;
+        }
+        .square:hover{
+            background-color: gold;
+            transform: rotate(45deg) scale(1.2 );
+            border-radius: 20%;
+        }
+        .circle{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            margin: 60px auto;
+            cursor: pointer;
+            border: 2px solid rgb(179, 233, 179);
+            border-radius: 50%;
+            transition: background-color 1s,transform 2s,box-shadow 0.6s;
+        }
+        .circle:hover{
+            background-color: lightgreen;
+            transform: scale(1.3);
+            box-shadow: 0 0 25px rgb(18, 211, 18);
+        }  
+
+    </style>
+</head>
+<body>
+    <h2>hover on elements to see transitions 👇</h2>
+    <button>Hover me !</button>
+    <div class="square"></div>
+    <div class="circle"></div>
+</body>
+</html>
